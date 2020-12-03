@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.companyname.ecolanappandroid" android:installLocation="auto" android:versionCode="9" android:versionName="9">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="30" />
+	<application android:label="EcolanAppAndroid.Android" android:icon="@drawable/logoInfoPointApp">
+		<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyA65sNRgaMjKdaS7JmfpHGA5l2qAIOZDjU" />
+	</application>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-feature android:name="android.hardware.location" android:required="true" />
+  <uses-feature android:name="android.hardware.location.gps" android:required="true" />
+  <uses-feature android:name="android.hardware.location.network" android:required="true" />
+</manifest>

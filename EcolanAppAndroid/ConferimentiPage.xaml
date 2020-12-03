@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcolanAppAndroid.ConferimentiPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <WebView Source="https://ecocontrolgsm.cloud/IsoleV3/BidoniSoloLivelli.aspx?Bidone=ISLANCIANO12" WidthRequest="800" HeightRequest="600" />
+            <Button Margin="2,2,2,2"  BackgroundColor="LightGreen" Text="Torna indietro" x:Name="BtnIndietro" Clicked="BtnIndietro_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

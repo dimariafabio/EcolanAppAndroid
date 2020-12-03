@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcolanAppAndroid.InfoPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="AVVICINARE LO SMARTPHONE PER CONFERIRE LA PLASTICA O PER PRELEVARE ACQUA. &#10; Sistema incentivante raccolta della plastica (PET) con premio in acqua naturale/frizzante purificata. Per ogni bottiglia di plastica (PET) buttata verrà riconosciuto 1 centesimo; al raggiungimento di 5 centesimi si ha diritto ad un litro di acqua naturale o frizzante.
+                        I tempi di ricarica del codice presente sul cellulare possono variare da qualche decina di secondi fino a max 3 ore.
+                        Servizio offerto dalla ECOCONTROL GSM di Termoli." FontSize="Large" HorizontalTextAlignment="Center"/>
+            <Button Text="Torna indietro" Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

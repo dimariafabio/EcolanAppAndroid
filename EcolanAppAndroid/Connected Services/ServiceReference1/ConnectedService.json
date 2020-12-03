@@ -1,0 +1,34 @@
+﻿{
+  "ProviderId": "Microsoft.VisualStudio.ConnectedService.Wcf",
+  "Version": "15.0.40203.910",
+  "GettingStartedDocument": {
+    "Uri": "https://go.microsoft.com/fwlink/?linkid=858517"
+  },
+  "ExtendedData": {
+    "inputs": [
+      "http://185.58.119.77/webservice/monetavirtuale/monetavirtuale.asmx?wsdl"
+    ],
+    "collectionTypes": [
+      "System.Array",
+      "System.Collections.Generic.Dictionary`2"
+    ],
+    "namespaceMappings": [
+      "*, ServiceMonetaVirtuale"
+    ],
+    "references": [
+      "Plugin.FirebasePushNotification, {Plugin.FirebasePushNotification, 3.3.10}",
+      "System.Numerics.Vectors, {System.Numerics.Vectors, 4.5.0}",
+      "Xamarin.Essentials, {Xamarin.Essentials, 1.5.3.2}",
+      "Xamarin.Forms.Core, {Xamarin.Forms, 4.8.0.1269}",
+      "Xamarin.Forms.Platform, {Xamarin.Forms, 4.8.0.1269}",
+      "Xamarin.Forms.Xaml, {Xamarin.Forms, 4.8.0.1269}",
+      "ZXing.Net.Mobile.Core, {ZXing.Net.Mobile, 2.4.1}",
+      "ZXing.Net.Mobile.Forms, {ZXing.Net.Mobile.Forms, 2.4.1}",
+      "zxing.portable, {ZXing.Net.Mobile, 2.4.1}",
+      "ZXingNetMobile, {ZXing.Net.Mobile, 2.4.1}"
+    ],
+    "sync": true,
+    "targetFramework": "netstandard2.0",
+    "typeReuseMode": "All"
+  }
+}

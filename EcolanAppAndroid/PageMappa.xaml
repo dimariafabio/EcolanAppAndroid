@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="EcolanAppAndroid.PageMappa">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical" Spacing="0" BackgroundColor="#636159">
+                <Grid BackgroundColor="#636159" ColumnSpacing="30" Padding="10,10,10,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="4*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <ImageButton BackgroundColor="Transparent" Grid.Column="0" Source="RisorsaRaccoltaEcopunti"/>
+                    <ImageButton BackgroundColor="Transparent" Grid.Column="1" Source="RisorsaEcolan"/>
+                </Grid>
+                <Grid BackgroundColor="#636159" ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="5"/>
+                    </Grid.RowDefinitions>
+                    <ImageButton BackgroundColor="Transparent" Grid.Column="0" Source="ButtonHome" x:Name="Menu1"/>
+                    <ImageButton BackgroundColor="Transparent" Grid.Column="1" Source="Risorsa4" x:Name="Menu2"/>
+                    <ImageButton BackgroundColor="Transparent" Grid.Column="2" Source="Risorsa3" x:Name="Menu3"/>
+                    <ImageButton BackgroundColor="Transparent" Grid.Column="3" Source="Risorsa2" x:Name="Menu4"/>
+                    <ImageButton BackgroundColor="Transparent" Grid.Column="4" Source="Risorsa1" x:Name="Menu5"/>
+                </Grid>
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="0,0,0,0" x:Name="Layout1">
+                    <!--BODY-->
+                    <!--<Image Source="Risorsa22" Aspect="AspectFill"/>-->
+                    <Label TextColor="White" Text="ECOPARCHI / MULTISERVICE DISPONIBILI" FontSize="Medium" HorizontalOptions="Center"/>
+                    <maps:Map x:Name="map1" HorizontalOptions="FillAndExpand">
+                        <x:Arguments>
+                            <!--
+                            <maps:MapSpan>
+                                <x:Arguments>
+                                    <maps:Position>
+                                        <x:Arguments>
+                                            <x:Double>42.002731</x:Double>
+                                            <x:Double>14.996115</x:Double>
+                                        </x:Arguments>
+                                    </maps:Position>
+                                    <x:Double>0.05</x:Double>e
+                                    <x:Double>0.05</x:Double>
+                                </x:Arguments>
+                            </maps:MapSpan>-->
+                        </x:Arguments>
+                        <maps:Map.Pins>
+                            <!--<maps:Pin Label="Ecoparco Termoli" Type="Place">
+                                <maps:Pin.Position>
+                                    <maps:Position>
+                                        <x:Arguments>
+                                            <x:Double>41.997924</x:Double>
+                                            <x:Double>14.988144</x:Double>
+                                        </x:Arguments>
+                                    </maps:Position>
+                                </maps:Pin.Position>
+                            </maps:Pin>-->
+                            <maps:Pin Label="Ecoparco Lanciano" Type="Place">
+                                <maps:Pin.Position>
+                                    <maps:Position>
+                                        <x:Arguments>
+                                            <x:Double>42.226262</x:Double>
+                                            <x:Double>14.404446</x:Double>
+                                        </x:Arguments>
+                                    </maps:Position>
+                                </maps:Pin.Position>
+                            </maps:Pin>
+                            <maps:Pin Label="Ecoservice Casalbordino" Type="Place">
+                                <maps:Pin.Position>
+                                    <maps:Position>
+                                        <x:Arguments>
+                                            <x:Double>42.157879</x:Double>
+                                            <x:Double>14.614374</x:Double>
+                                        </x:Arguments>
+                                    </maps:Position>
+                                </maps:Pin.Position>
+                            </maps:Pin>
+                        </maps:Map.Pins>
+                    </maps:Map>
+                    
+                    <!--/BODY-->
+                </StackLayout>
+                <StackLayout HorizontalOptions="FillAndExpand">
+                    <Image Source="FooterEcocontrol"/>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

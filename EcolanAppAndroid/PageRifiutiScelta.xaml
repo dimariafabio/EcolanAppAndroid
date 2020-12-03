@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcolanAppAndroid.PageRifiutiScelta">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+        <Grid BackgroundColor="#636159" ColumnSpacing="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <ImageButton BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Source="BtnCarta" x:Name="BtnCarta" Clicked="BtnCarta_Clicked"/>
+            <ImageButton BackgroundColor="Transparent" Grid.Row="0" Grid.Column="1" Source="BtnPlastica" x:Name="BtnPlastica" Clicked="BtnPlastica_Clicked"/>
+            <ImageButton BackgroundColor="Transparent" Grid.Row="1" Grid.Column="0" Source="BtnVetro" x:Name="BtnVetro" Clicked="BtnVetro_Clicked"/>
+            <ImageButton BackgroundColor="Transparent" Grid.Row="1" Grid.Column="1" Source="BtnMetalli" x:Name="BtnMetalli" Clicked="BtnMetalli_Clicked"/>
+            <ImageButton BackgroundColor="Transparent" Grid.Row="2" Grid.Column="0" Source="BtnSecco" x:Name="BtnSecco" Clicked="BtnSecco_Clicked"/>
+            <ImageButton BackgroundColor="Transparent" Grid.Row="2" Grid.Column="1" Source="BtnUmido" x:Name="BtnUmido" Clicked="BtnUmido_Clicked"/>
+        </Grid>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

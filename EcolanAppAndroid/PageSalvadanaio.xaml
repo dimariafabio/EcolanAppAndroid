@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EcolanAppAndroid.PageSalvadanaio">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical" Spacing="0" VerticalOptions="FillAndExpand" BackgroundColor="Aqua">
+                <Grid BackgroundColor="#636159" ColumnSpacing="30" Padding="10,10,10,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="4*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <ImageButton BackgroundColor="Transparent" Grid.Column="0" Source="RisorsaRaccoltaEcopunti"/>
+                    <ImageButton BackgroundColor="Transparent" Grid.Column="1" Source="RisorsaEcolan"/>
+                </Grid>
+                <Grid BackgroundColor="#636159" ColumnSpacing="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="5"/>
+                    </Grid.RowDefinitions>
+                    <ImageButton BackgroundColor="Transparent" Grid.Column="0" Source="ButtonHome" x:Name="Menu1"/>
+                    <ImageButton BackgroundColor="Transparent" Grid.Column="1" Source="Risorsa4" x:Name="Menu2"/>
+                    <ImageButton BackgroundColor="Transparent" Grid.Column="2" Source="Risorsa3" x:Name="Menu3"/>
+                    <ImageButton BackgroundColor="Transparent" Grid.Column="3" Source="Risorsa2" x:Name="Menu4"/>
+                    <ImageButton BackgroundColor="Transparent" Grid.Column="4" Source="Risorsa1" x:Name="Menu5"/>
+                </Grid>
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="#7ca137">
+                    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand" Margin="50,10,50,50">
+                        <!--BODY-->
+                        <!--<AbsoluteLayout HorizontalOptions="FillAndExpand">
+                            <Image Source="MioSalvadanaio" Aspect="Fill"/>
+                            <Label AbsoluteLayout.LayoutBounds="220,155,80,30" TextColor="White" Text=".... pz/lt" x:Name="LabelRaccolto"/>
+                            <Label AbsoluteLayout.LayoutBounds="220,190,80,30" TextColor="White" Text=".... lt" x:Name="LabelLitriAcqua"/>
+                            <Label AbsoluteLayout.LayoutBounds="220,230,80,30" TextColor="White" Text=".... ml" x:Name="LabelLitriSapone"/>
+                        </AbsoluteLayout>-->
+                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                            <Image Source="MioSalvadanaio2"/>
+                            
+                            <StackLayout Orientation="Vertical" Spacing="10">
+                                <Label x:Name="LabelRaccolto" Text="FIN ORA HAI RACCOLTO: " TextColor="White" FontSize="Medium"/>
+                                <Label x:Name="LabelLtAcqua" Text="Hai diritto a prendere ... Lt di acqua potabile filtrata e refrigerata" TextColor="White" FontSize="Medium" />
+                                <Label x:Name="LabelMlDetergente" Text="Hai diritto a prendere ... ml di detergente ecologico" TextColor="White" FontSize="Medium"/>
+                            </StackLayout>
+                            
+                        </StackLayout>
+                        <!--<AbsoluteLayout BackgroundColor="AliceBlue" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                            <Image Source="MioSalvadanaio"/>
+                            <StackLayout HorizontalOptions="FillAndExpand" TranslationY="100" TranslationX="100">
+                                <Label TextColor="White" Text=".... pz/lt" x:Name="LabelRaccolto" XAlign="Center" />
+                                <Label TextColor="White" Text=".... lt" x:Name="LabelLitriAcqua"/>
+                                <Label TextColor="White" Text=".... ml" x:Name="LabelLitriSapone"/>
+                            </StackLayout>
+                        </AbsoluteLayout>-->
+                        <!--/BODY-->
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout HorizontalOptions="FillAndExpand">
+                    <Image Source="FooterEcocontrol"/>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
